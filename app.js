@@ -25,3 +25,17 @@ console.log(daysOfWeek[4]);
 daysOfWeek.push("sun");
 
 console.log(daysOfWeek);
+console.log('---------------------------');
+
+
+// objects(객체)
+const player = {
+  name: "binnie",
+  points: 10,
+  fat: true,
+};
+
+console.log(player);
+player.points = player.points + 15;
+console.log(player.points);
+console.log('---------------------------');
