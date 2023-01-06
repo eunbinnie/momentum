@@ -39,3 +39,21 @@ console.log(player);
 player.points = player.points + 15;
 console.log(player.points);
 console.log('---------------------------');
+
+
+// function
+const player2 = {
+  name: 'nico',
+
+  sayHello(otherPersonsName) {
+    console.log(`hello ${otherPersonsName} nice to meet you!`);
+  },
+};
+
+player2.sayHello('lynn');
+player2.sayHello('nico');
+
+function plus(a, b) {
+  console.log(a + b);
+}
+plus(4, 6);
