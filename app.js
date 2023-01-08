@@ -89,3 +89,55 @@ calculator.minus(7, 4);
 calculator.multi(3, 9);
 calculator.div(8, 2);
 calculator.powerof(2, 6);
+console.log('---------------------------');
+
+
+// return
+const age = 96;
+function calculateKrAge(ageOfRoreigner) {
+  return ageOfRoreigner + 2;
+}
+
+const KrAge = calculateKrAge(age);
+
+console.log(KrAge);
+
+
+// return calculator
+
+const calculatorReturn = {
+  sum(a, b) {
+    return a + b;
+  },
+
+  sub(a, b) {
+    return a - b;
+  },
+
+  multi(a, b) {
+    return a * b;
+  },
+
+  div(a, b) {
+    return a / b;
+  },
+
+  power(a, b) {
+    return a ** b;
+  },
+};
+
+const sumResult = calculatorReturn.sum(2, 3);
+console.log(sumResult);
+
+const subResult = calculatorReturn.sub(2, 3);
+console.log(subResult);
+
+const multiResult = calculatorReturn.multi(2, 3);
+console.log(multiResult);
+
+const divResult = calculatorReturn.div(2, 3);
+console.log(divResult);
+
+const powerResult = calculatorReturn.power(2, 3);
+console.log(powerResult);
