@@ -57,3 +57,35 @@ function plus(a, b) {
   console.log(a + b);
 }
 plus(4, 6);
+console.log('---------------------------');
+
+
+// calculator challenge
+
+const calculator = {
+  add(a, b) {
+    console.log(`${a} + ${b} = ${a + b}`);
+  },
+
+  minus(a, b) {
+    console.log(`${a} - ${b} = ${a - b}`);
+  },
+
+  multi(a, b) {
+    console.log(`${a} * ${b} = ${a * b}`);
+  },
+
+  div(a, b) {
+    console.log(`${a} / ${b} = ${a / b}`);
+  },
+
+  powerof(a, b) {
+    console.log(`${a} ^ ${b} = ${a ** b}`);
+  },
+};
+
+calculator.add(1, 2);
+calculator.minus(7, 4);
+calculator.multi(3, 9);
+calculator.div(8, 2);
+calculator.powerof(2, 6);
