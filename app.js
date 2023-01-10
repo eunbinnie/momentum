@@ -168,27 +168,47 @@
 // }
 
 // id로 가져오기
-const title = document.getElementById("title");
-console.log(title);
-console.dir(title);
+{
 
-title.innerText = "Hello! Welcome";
+  const title = document.getElementById("title");
+  console.log(title);
+  console.dir(title);
 
-console.log(title.className);
-console.log(title.id);
+  title.innerText = "Click me!";
+  title.style.color = "blue";
 
-// class로 가져오기
-const user = document.getElementsByClassName("name");
-console.log(user);
+  console.log(title.className);
+  console.log(title.id);
 
-// tag name으로 가져오기
-const title2 = document.getElementsByTagName("h1");
-console.log(title2);
+  // class로 가져오기
+  const user = document.getElementsByClassName("name");
+  console.log(user);
 
-// querySelector
-const title3 = document.querySelector(".text h1");
-console.log(title3);
+  // tag name으로 가져오기
+  const title2 = document.getElementsByTagName("h1");
+  console.log(title2);
 
-//querySelectorAll
-const title4 = document.querySelectorAll(".text h1");
-console.log(title4);
+  // querySelector
+  const title3 = document.querySelector(".text h1");
+  console.log(title3);
+
+  //querySelectorAll
+  const title4 = document.querySelectorAll(".text h1");
+  console.log(title4);
+
+}
+
+
+// event listener
+{
+
+  const title = document.querySelector("#title");
+
+  function handleTitleClick() {
+    title.style.color = "red";
+    console.log("title was clicked!");
+  }
+
+  title.addEventListener("click", handleTitleClick);
+
+}
