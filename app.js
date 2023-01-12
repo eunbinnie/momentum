@@ -168,78 +168,158 @@
 // }
 
 // id로 가져오기
+// {
+
+//   const title = document.getElementById("title");
+//   console.log(title);
+//   console.dir(title);
+
+//   title.innerText = "Click me!";
+//   title.style.color = "blue";
+
+//   console.log(title.className);
+//   console.log(title.id);
+
+//   // class로 가져오기
+//   const user = document.getElementsByClassName("name");
+//   console.log(user);
+
+//   // tag name으로 가져오기
+//   const title2 = document.getElementsByTagName("h1");
+//   console.log(title2);
+
+//   // querySelector
+//   const title3 = document.querySelector(".text h1");
+//   console.log(title3);
+
+//   //querySelectorAll
+//   const title4 = document.querySelectorAll(".text h1");
+//   console.log(title4);
+
+// }
+
+
+// // event listener
+// {
+
+//   const h1 = document.querySelector("#title");
+
+//   function handleTitleClick() {
+//     h1.style.color = "red";
+//     console.log("title was clicked!");
+//   }
+
+//   function handleMouseEnter() {
+//     h1.innerText = "Mouse is here!";
+//   }
+
+//   function handleMouseLeave() {
+//     h1.innerText = "Mouse is gone!";
+//   }
+
+//   function handleWindowResize() {
+//     document.body.style.backgroundColor = "tomato";
+//   }
+
+//   function handleWindowCopy() {
+//     alert("copier!");
+//   }
+
+//   function handleWindowOffline() {
+//     alert("SOS no WIFI");
+//   }
+
+//   function handleWindowOnline() {
+//     alert("ALL GOOD");
+//   }
+
+//   h1.addEventListener('click', handleTitleClick);
+//   h1.addEventListener('mouseenter', handleMouseEnter);
+//   h1.addEventListener('mouseleave', handleMouseLeave);
+
+//   window.addEventListener('resize', handleWindowResize);
+//   window.addEventListener('copy', handleWindowCopy);
+//   window.addEventListener('offline', handleWindowOffline);
+//   window.addEventListener('online', handleWindowOnline);
+
+// }
+
+
+// CSS in Javascript part 1
+// {
+
+//   const h1 = document.querySelector("#title");
+
+//   function handleTitleClick() {
+//     const currentColor = h1.style.color;
+//     let newColor;
+
+//     if (currentColor === "blue") {
+//       newColor = "tomato";
+//     } else {
+//       newColor = "blue";
+//     }
+//     h1.style.color = newColor;
+//   }
+
+//   h1.addEventListener('click', handleTitleClick);
+
+// }
+
+
+// CSS in Javascript part 2
+// {
+
+//   const h1 = document.querySelector("h1");
+
+//   function handleTitleClick() {
+//     const clickedClass = "clicked";
+
+//     if (h1.className === clickedClass) {
+//       h1.className = "";
+//     } else {
+//       h1.className = clickedClass;
+//     }
+//   }
+
+//   h1.addEventListener('click', handleTitleClick);
+
+// }
+
+
+// CSS in Javascript part 3(1)
+// {
+
+//   const h1 = document.querySelector("h1");
+
+//   function handleTitleClick() {
+//     const clickedClass = "clicked";
+
+//     if (h1.classList.contains(clickedClass)) {
+//       h1.classList.remove(clickedClass);
+//     } else {
+//       h1.classList.add(clickedClass);
+//     }
+//   }
+
+//   h1.addEventListener('click', handleTitleClick);
+
+// }
+
+
+// CSS in Javascript part 3(2)
 {
 
-  const title = document.getElementById("title");
-  console.log(title);
-  console.dir(title);
+  const h1 = document.querySelector("h1");
 
-  title.innerText = "Click me!";
-  title.style.color = "blue";
+  // function handleTitleClick() {
+  //   h1.classList.toggle("clicked");
+  // }
 
-  console.log(title.className);
-  console.log(title.id);
+  // h1.addEventListener('click', handleTitleClick);
 
-  // class로 가져오기
-  const user = document.getElementsByClassName("name");
-  console.log(user);
-
-  // tag name으로 가져오기
-  const title2 = document.getElementsByTagName("h1");
-  console.log(title2);
-
-  // querySelector
-  const title3 = document.querySelector(".text h1");
-  console.log(title3);
-
-  //querySelectorAll
-  const title4 = document.querySelectorAll(".text h1");
-  console.log(title4);
-
-}
-
-
-// event listener
-{
-
-  const h1 = document.querySelector("#title");
-
-  function handleTitleClick() {
-    h1.style.color = "red";
-    console.log("title was clicked!");
-  }
-
-  function handleMouseEnter() {
-    h1.innerText = "Mouse is here!";
-  }
-
-  function handleMouseLeave() {
-    h1.innerText = "Mouse is gone!";
-  }
-
-  function handleWindowResize() {
-    document.body.style.backgroundColor = "tomato";
-  }
-
-  function handleWindowCopy() {
-    alert("copier!");
-  }
-
-  function handleWindowOffline() {
-    alert("SOS no WIFI");
-  }
-
-  function handleWindowOnline() {
-    alert("ALL GOOD");
-  }
-
-  h1.addEventListener('click', handleTitleClick);
-  h1.addEventListener('mouseenter', handleMouseEnter);
-  h1.addEventListener('mouseleave', handleMouseLeave);
-
-  window.addEventListener('resize', handleWindowResize);
-  window.addEventListener('copy', handleWindowCopy);
-  window.addEventListener('offline', handleWindowOffline);
-  window.addEventListener('online', handleWindowOnline);
+  h1.addEventListener('click', function () {
+    h1.classList.toggle("clicked");
+  });
 
 }
