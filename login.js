@@ -1,6 +1,8 @@
 const loginForm = document.querySelector("#login-form");
 const loginInput = document.querySelector("#login-form input");
 
+const link = document.querySelector("a");
+
 // 내가 작성한 코드
 // function onLoginBtnClick() {
 //   if (loginInput.value === "") {
@@ -18,4 +20,10 @@ function onLoginSubmit(event) {
   console.log(loginInput.value);
 }
 
+function handleLinkClick(event) {
+  event.preventDefault();
+}
+
 loginForm.addEventListener('submit', onLoginSubmit);
+
+link.addEventListener('click', handleLinkClick);
