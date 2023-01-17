@@ -310,7 +310,7 @@
 // CSS in Javascript part 3(2)
 {
 
-  const h1 = document.querySelector("h1");
+  const h1 = document.querySelector("#title");
 
   // function handleTitleClick() {
   //   h1.classList.toggle("clicked");
